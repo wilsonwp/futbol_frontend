@@ -10,17 +10,23 @@ app
 })
 .controller('GetPartidosCtrl', function($scope,PartidosResource) {
    $scope.partidos= PartidosResource.query();
-   console.log($scope.partidos);
    
    $scope.formVisibility = false;
-   $scope.show_timeline = function(id){
+   $scope.show_timeline = function(comentarios){
        if($scope.formVisibility == true){
            $scope.formVisibility = false
        }else{
            $scope.formVisibility = true 
        }
+           $scope.comentarios = comentarios;
+             console.log(comentarios);  
+           
        
        
    }
+  
+       
+    
+
 })
 ;
