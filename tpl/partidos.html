@@ -21,14 +21,10 @@
         <li class="tl-header">
           <div class="btn btn-info">Inicio de Patido</div>
         </li>
-        <li class="tl-item" ng-repeat="comentario in comentarios">
-          <div class="tl-wrap b-info">
-            <span class="tl-date">{{comentario['minuto']}}</span>
-            <div class="tl-content">
-              {{comentario['contenido']}}
-            </div>
-          </div>
-        </li>
+        <div ng-repeat="comentario in comentarios" >
+            {{comentario.look}}
+        </div>
+       
         <li class="tl-item">
           <div class="tl-wrap">
             <span class="tl-date">2h ago</span>
