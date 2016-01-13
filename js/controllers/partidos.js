@@ -8,7 +8,7 @@ app
         PartidosResource.save($scope.Comentario);
     }
 })
-.controller('GetPartidosCtrl', function($scope,PartidosResource) {
+.controller('GetPartidosCtrl', function($scope,$sce,PartidosResource) {
    $scope.partidos= PartidosResource.query();
    
    $scope.formVisibility = false;
@@ -20,7 +20,9 @@ app
        }
            $scope.comentarios = comentarios;
              console.log(comentarios);  
-           
+         $scope.trustAsHtml = function(value) {
+            return $sce.trustAsHtml(value);
+        };
        
        
    }

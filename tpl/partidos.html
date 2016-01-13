@@ -3,7 +3,7 @@
   <div class="col w-lg bg-light dk b-r bg-auto" id="aside">
       <div class="wrapper bg b-b" ng-repeat="partido in partidos">
          
-          <button class="btn btn-info btn-addon"><i class="fa fa-soccer-ball-o"  ng-click="show_timeline({{partido.comentarios}})" ng-hide=""></i>Ver Minuto a Minuto</button>
+          <button ng-click="show_timeline({{partido.comentarios}})" class="btn btn-info btn-addon"><i class="fa fa-soccer-ball-o"   ng-hide=""></i>Ver Minuto a Minuto</button>
         <div ng-repeat=" equipo in partido.equipos">
              
         <h3 class="m-n font-thin">{{equipo.nombre_equipo}}</h3>
@@ -22,7 +22,7 @@
           <div class="btn btn-info">Inicio de Patido</div>
         </li>
         <div ng-repeat="comentario in comentarios" >
-            {{comentario.look}}
+            <div ng-bind-html="trustAsHtml(comentario.look)"> </div>
         </div>
        
         <li class="tl-item">
