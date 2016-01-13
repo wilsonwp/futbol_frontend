@@ -13,11 +13,13 @@ angular.module('app')
     ]
   )
   .config(
-    [          '$stateProvider', '$urlRouterProvider',
-      function ($stateProvider,   $urlRouterProvider) {
+    [          '$stateProvider', '$urlRouterProvider','$authProvider',
+      function ($stateProvider,  $urlRouterProvider ,$authProvider) {
           
+          $authProvider.loginUrl = '/api/authenticate';
+          $authProvider.baseUrl = 'http://localhost:8000';
           $urlRouterProvider
-              .otherwise('/app/dashboard-v1');
+              .otherwise('app/dashboard-v1');
           $stateProvider
               .state('app', {
                   abstract: true,

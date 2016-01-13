@@ -2,22 +2,17 @@
 
 /* Controllers */
   // signin controller
-app.controller('SigninFormController', ['$scope', '$http', '$state', function($scope, $http, $state) {
-    $scope.user = {};
+app.controller('SigninFormController', ['$scope', '$http', '$state','$auth', function($scope, $http, $state, $auth) {
+    var credentials = {};
     $scope.authError = null;
     $scope.login = function() {
-      $scope.authError = null;
-      // Try to login
-      $http.post('api/login', {email: $scope.user.email, password: $scope.user.password})
-      .then(function(response) {
-        if ( !response.data.user ) {
-          $scope.authError = 'Email or Password not right';
-        }else{
-          $state.go('app.dashboard-v1');
-        }
-      }, function(x) {
-        $scope.authError = 'Server Error';
-      });
+    var credentials= {email:$scope.user.email,password:$scope.user.password};
+    $scope.authError = null;
+     $auth.login(credentials).then(function(data) {
+                $state.go('app.ui.timeline', {});
+                console.log(data);
+            });
+    
     };
   }])
 ;
