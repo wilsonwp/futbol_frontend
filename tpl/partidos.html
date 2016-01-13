@@ -19,7 +19,7 @@
       <div class="wrapper" ng-show="formVisibility">
       <ul class="timeline-center">
         
-        <div ng-repeat="comentario in comentarios" >
+        <div ng-repeat="comentario in comentarios | orderBy:'minuto':true" >
             <div ng-bind-html="trustAsHtml(comentario.look)"> </div>
         </div>
 
