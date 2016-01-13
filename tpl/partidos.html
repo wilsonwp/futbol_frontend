@@ -18,12 +18,14 @@
   <div class="col">
       <div class="wrapper" ng-show="formVisibility">
       <ul class="timeline-center">
-        <li class="tl-header">
-          <div class="btn btn-info">Inicio de Patido</div>
-        </li>
+        
         <div ng-repeat="comentario in comentarios" >
             <div ng-bind-html="trustAsHtml(comentario.look)"> </div>
         </div>
+
+        <li class="tl-header">
+          <div class="btn btn-info">Inicio de Patido</div>
+        </li>
        
         <li class="tl-item">
           <div class="tl-wrap">

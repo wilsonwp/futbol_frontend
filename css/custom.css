@@ -1,0 +1,39 @@
+/* Lineas Comentarios partidos*/
+.b-falta {
+    border-color: #ff7200;
+}
+.b-falta .arrow.left:after
+{
+	border-right-color:  #ff7200;
+}
+.b-falta .m-b-sm
+{
+	color:#ff7200;
+
+}
+.b-fuera {
+    border-color: #792870;
+}
+.b-tiro {
+    border-color: #009968;
+}
+.b-gol {
+    border-color: #2f6206;
+}
+
+.b-medio {
+    border-color: #144168;
+}
+.b-extra {
+    border-color: #8b7026;
+}
+.b-final {
+    border-color: #734343;
+}
+.b-amarilla {
+    border-color: #f0cb00;
+}
+.b-roja {
+    border-color: #b20000;
+}
+
