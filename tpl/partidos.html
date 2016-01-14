@@ -20,7 +20,7 @@
       <ul class="timeline-center">
         
         <div ng-repeat="comentario in comentarios | orderBy:'minuto':true" >
-            <div ng-bind-html="trustAsHtml(comentario.look)"> </div>
+            <div ng-bind-html="trustAsHtml(vistaComentario(comentario))"> </div>
         </div>
 
         <li class="tl-header">
