@@ -156,9 +156,23 @@
 /*Menu aplicación web*/
 .menu_fijo
 {
-
+	position: fixed;
 }
 .menu_lateral
 {
 
 }
+/*minuto listado equipos*/
+.nombre_equipos_minuto
+{
+
+    padding-right: 40px;
+
+}
+.nombre_equipos_minuto:last-child
+{
+
+    padding-right: 0px;
+
+}
+
