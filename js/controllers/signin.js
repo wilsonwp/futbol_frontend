@@ -9,8 +9,8 @@ app.controller('SigninFormController', ['$scope', '$http', '$state','$auth', fun
     var credentials= {email:$scope.user.email,password:$scope.user.password};
     $scope.authError = null;
      $auth.login(credentials).then(function(data) {
-                $state.go('app.ui.timeline', {});
-                console.log(data);
+                $state.go('app.partidos', {});
+              
             });
     
     };

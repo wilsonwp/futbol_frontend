@@ -1,22 +1,14 @@
 'use strict';
 
 // signup controller
-app.controller('SignupFormController', ['$scope', '$http', '$state', function($scope, $http, $state) {
+app.controller('SignupFormController', ['$scope', '$http', '$state','SignResource', function($scope, $http, $state,SignResource) {
     $scope.user = {};
     $scope.authError = null;
-    $scope.signup = function() {
-      $scope.authError = null;
-      // Try to create
-      $http.post('http://localhost:8000/api/authenticate', {name: $scope.user.name, email: $scope.user.email, password: $scope.user.password})
-      .then(function(response) {
-        if ( !response.data.user ) {
-          $scope.authError = response;
-        }else{
-          $state.go('app.dashboard-v1');
-        }
-      }, function(x) {
-        $scope.authError = 'Server Error';
-      });
-    };
+    $scope.signup = function($response) {
+
+        SignResource.save($scope.user);
+        console.log($response) ;
+    }
+
   }])
  ;
