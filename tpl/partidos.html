@@ -6,7 +6,7 @@
           <button ng-click="show_timeline({{partido.comentarios}})" class="btn btn-info btn-addon"><i class="fa fa-soccer-ball-o"   ng-hide=""></i>Ver Minuto a Minuto</button>
         <div ng-repeat=" equipo in partido.equipos">
              
-        <h3 class="m-n font-thin">{{equipo.nombre_equipo}}</h3>
+            <h3 class="m-n font-thin">{{equipo.nombre_equipo}}</h3><img src="http://localhost:8000/logos/{{equipo.path}}">
         
         </div>
             <button class="btn btn-rounded btn-lg btn-icon btn-default"><i class="fa ">Vs.</i></button>
