@@ -8,10 +8,15 @@ app.controller('SigninFormController', ['$scope', '$http', '$state','$auth', fun
     $scope.login = function() {
     var credentials= {email:$scope.user.email,password:$scope.user.password};
     $scope.authError = null;
-     $auth.login(credentials).then(function(data) {
+    try{
+       $auth.login(credentials).then(function(data) {
                 $state.go('app.partidos', {});
               
-            });
+            });  
+    }catch(error){
+         $scope.authError = error;
+    }
+    
     
     };
   }])

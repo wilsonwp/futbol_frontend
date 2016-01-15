@@ -5,9 +5,14 @@ app.controller('SignupFormController', ['$scope', '$http', '$state','SignResourc
     $scope.user = {};
     $scope.authError = null;
     $scope.signup = function($response) {
-
-        SignResource.save($scope.user);
-        console.log($response) ;
+            try {
+                SignResource.save($scope.user);
+               $scope.authError = "Debe Iniciar Sesión";
+                $state.go('access.signin', {});
+            }catch(err){
+                $scope.authError = "Ha ocurrido un Error";
+            }
+        
     }
 
   }])
