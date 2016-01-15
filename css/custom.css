@@ -1,39 +1,178 @@
 /* Lineas Comentarios partidos*/
+.tl-content.panel.padder.b-a.w-md.w-auto-xs
+{
+	padding-top: 0px;
+}
+.title_msn
+{
+    display: block;
+    margin: 0 -15px;
+}
+.title_msn span
+{
+	color:#fff;
+    margin: 0 0 0 15px;
+    display:table;
+    padding: 10px;
+    font-weight: bolder;
+}
+
 .b-falta {
     border-color: #ff7200;
+}
+.b-falta .title_msn
+{
+	background: #ff7200
 }
 .b-falta .arrow.left:after
 {
 	border-right-color:  #ff7200;
 }
-.b-falta .m-b-sm
+.b-falta .arrow.right:after
 {
-	color:#ff7200;
-
+	border-left-color:  #ff7200;
 }
 .b-fuera {
     border-color: #792870;
 }
+.b-fuera .arrow.left:after
+{
+	border-right-color:  #792870;
+}
+.b-fuera .arrow.right:after
+{
+	border-left-color:  #792870;
+}
+.b-fuera .title_msn
+{
+	background: #792870;
+}
 .b-tiro {
     border-color: #009968;
+}
+.b-tiro .arrow.left:after
+{
+	border-right-color:  #009968;
+}
+.b-tiro .arrow.right:after
+{
+	border-left-color:  #009968;
+}
+.b-tiro .title_msn
+{
+	background: #009968;
 }
 .b-gol {
     border-color: #2f6206;
 }
-
+.b-gol .arrow.left:after
+{
+	border-right-color:  #2f6206;
+}
+.b-gol .arrow.right:after
+{
+	border-left-color:  #2f6206;
+}
+.b-gol .title_msn
+{
+	background: #2f6206;
+}
 .b-medio {
     border-color: #144168;
+}
+.b-medio .arrow.left:after
+{
+	border-right-color:  #144168;
+}
+.b-medio .arrow.right:after
+{
+	border-left-color:  #144168;
+}
+.b-medio .title_msn
+{
+	background: #144168;
 }
 .b-extra {
     border-color: #8b7026;
 }
+.b-extra .arrow.left:after
+{
+	border-right-color:  #8b7026;
+}
+.b-extra .arrow.right:after
+{
+	border-left-color:  #8b7026;
+}
+.b-extra .title_msn
+{
+	background: #8b7026;
+}
 .b-final {
     border-color: #734343;
+}
+.b-final .arrow.left:after
+{
+	border-right-color:  #734343;
+}
+.b-final .arrow.right:after
+{
+	border-left-color:  #734343;
+}
+.b-final .title_msn
+{
+	background: #734343;
 }
 .b-amarilla {
     border-color: #f0cb00;
 }
+.b-amarilla .arrow.left:after
+{
+	border-right-color:  #f0cb00;
+}
+.b-amarilla .arrow.right:after
+{
+	border-left-color:  #f0cb00;
+}
+.b-amarilla .title_msn
+{
+	background: #f0cb00;
+}
 .b-roja {
     border-color: #b20000;
+}
+.b-roja .arrow.left:after
+{
+	border-right-color:  #b20000;
+}
+.b-roja .arrow.right:after
+{
+	border-left-color:  #b20000;
+}
+.b-roja .title_msn
+{
+	background: #b20000;
+}
+
+/*Menu aplicación web*/
+.menu_fijo
+{
+	position: fixed;
+}
+.menu_lateral
+{
+
+}
+/*minuto listado equipos*/
+.nombre_equipos_minuto
+{
+
+    padding-right: 40px;
+
+}
+.nombre_equipos_minuto:last-child
+{
+
+    padding-right: 0px;
+
 }
 

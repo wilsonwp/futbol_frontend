@@ -42,7 +42,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+" Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                 <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
@@ -65,7 +65,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+" Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                 <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
@@ -88,7 +88,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+".Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                 <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
@@ -111,7 +111,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+" :Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                  <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
@@ -134,7 +134,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+" :Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                 <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
@@ -157,7 +157,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+" :Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                  <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
@@ -180,7 +180,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+" :Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                  <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
@@ -203,7 +203,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+" :Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                  <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
@@ -226,7 +226,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+" :Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                  <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
@@ -249,7 +249,7 @@ app
                               <span class='tl-date'>"+comentario.minuto+" :Min.</span>\n\
                               <div class='tl-content panel padder b-a w-md w-auto-xs'>\n\
                                 <span class='"+sentido2+"'></span>\n\
-                                <div class='text-lt m-b-sm'>"+comentario.titulo+"</div>\n\
+                                <div class='text-lt m-b-sm title_msn'><span>"+comentario.titulo+"</span></div>\n\
                                 <div class='panel-body pull-in b-t b-light'>\n\
                                 <a href='' class='thumb pull-right m-l m-t-xs avatar'>\n\
                                         <img src='img/a4.jpg' alt='...'>\n\
