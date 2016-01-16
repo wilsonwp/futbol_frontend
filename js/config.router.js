@@ -19,7 +19,7 @@ angular.module('app')
           $authProvider.loginUrl = '/api/authenticate';
           $authProvider.baseUrl = 'http://localhost:8000';
           $urlRouterProvider
-              .otherwise('app/dashboard-v1');
+              .otherwise('access/signin');
           $stateProvider
               .state('app', {
                   abstract: true,

@@ -3,25 +3,16 @@
   <div class="col w-lg bg-light dk b-r bg-auto" id="aside">
       <div class="wrapper bg b-b" ng-repeat="partido in partidos">
          
-<<<<<<< HEAD
-          <button ng-click="show_timeline({{partido.comentarios}})" class="btn btn-info btn-addon"><i class="fa fa-soccer-ball-o"   ng-hide=""></i>Ver Minuto a Minuto</button>
-        <div ng-repeat=" equipo in partido.equipos">
-             
-            <h3 class="m-n font-thin">{{equipo.nombre_equipo}}</h3><img src="http://localhost:8000/logos/{{equipo.path}}">
-        
-        </div>
-            <button class="btn btn-rounded btn-lg btn-icon btn-default"><i class="fa ">Vs.</i></button>
-=======
         <button ng-click="show_timeline({{partido.comentarios}})" class="btn btn-info btn-addon">          
           <div class="col w-lg2">
             <i class="fa fa-soccer-ball-o juego_balon"   ng-hide=""></i>          
           </div>
           <div ng-repeat=" equipo in partido.equipos" class="col w-lg5 nombre_equipos_minuto ">               
-            <h5 class="m-n font-thin">{{equipo.nombre_equipo}}</h5>
+            <h5 class="m-n font-thin">{{equipo.nombre_equipo}}</h5><img class="logos_minuatura" src="http://localhost:8000/logos/{{equipo.path}}">
           </div> 
           
         </button>
->>>>>>> 89befc26757c63fc0872b2abd4e2894eef524b20
+
     </div>
     
   </div>
