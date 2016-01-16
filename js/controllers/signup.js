@@ -12,6 +12,7 @@ app.controller('SignupFormController', ['$scope', '$http', '$state','SignResourc
             }catch(err){
                 $scope.authError = "Ha ocurrido un Error";
             }
+            
         
     }
 

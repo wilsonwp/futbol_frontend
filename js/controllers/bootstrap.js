@@ -264,13 +264,14 @@
     };
 
     $scope.dateOptions = {
-      formatYear: 'yy',
+      formatYear: 'yyyy',
       startingDay: 1,
-      class: 'datepicker'
+      class: 'datepicker',
+      regional:'sv'
     };
 
     $scope.initDate = new Date('2016-15-20');
-    $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+    $scope.formats = ['dd/MM/yyyy','dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
     $scope.format = $scope.formats[0];
   }])
   ; 
