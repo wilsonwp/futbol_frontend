@@ -23,13 +23,10 @@
             </div>
               <div class="list-group-item">
                 <input type="text" class="form-control no-border" placeholder="Telefono: (XXX) XXXX XXX" ng-model="user.telefono" required>
-              </div>
-              <div class="list-group-item">
-                <input type="date" class="form-control no-border" placeholder="Fecha de Nacimiento" ng-model="user.fecha_nacimiento" required>
-              </div>  
+              </div> 
               <div class="list-group-item" ng-controller="DatepickerDemoCtrl">
             <div class="input-group w-md">
-              <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" datepicker-options="dateOptions" ng-required="true" close-text="Cerrar" />
+                <input type="text" placeholder="Fecha de Nacimiento" class="form-control" datepicker-popup="{{format}}" ng-model="user.fecha_nacimiento" is-open="opened" datepicker-options="dateOptions" ng-required="true" close-text="Cerrar" />
               <span class="input-group-btn">
                 <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
               </span>
