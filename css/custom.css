@@ -1,4 +1,53 @@
+/*logos comentarios*/
+.logos_miniatura {
+    width: 32px;
+}
+.separador_partido{
+	position: relative;
+	top:0;
+	left: 50%;
+	margin-left: -15px;
+}
+.juego_balon {
+    height: 100% !important;
+    margin: 0 auto 0 -19px !important;
+    min-height: 100%;
+    padding-bottom: 8px;
+    padding-top: 5px;
+}
+.nombre_equipo{
+
+}
+
+
+/*header*/
+.header-logo
+{
+	background-color: #fff;
+}
+.nombre_app
+{
+	color:#bc000a ;
+}
+/*Footer app*/
+.app-footer{
+	position: fixed;
+	background-color: #000 !important;
+	color:#fff;
+}
+.foot-logo
+{
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+.copy {
+    font-size: 16px;
+    margin-top: -1px;
+    position: relative;
+    top: 8px;
+}
 /* Lineas Comentarios partidos*/
+
 .tl-content.panel.padder.b-a.w-md.w-auto-xs
 {
 	padding-top: 0px;
@@ -163,11 +212,10 @@
 
 }
 /*minuto listado equipos*/
-.nombre_equipos_minuto
-{
-
-    padding-right: 40px;
-
+.nombre_equipos_minuto {
+    left: -15px;
+    padding-right: 79px;
+    position: relative;
 }
 .nombre_equipos_minuto:last-child
 {
