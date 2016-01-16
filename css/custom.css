@@ -1,4 +1,26 @@
+/*logos comentarios*/
+.logos_miniatura {
+    width: 50%;
+}
+.separador_partido{
+	position: relative;
+	top:0;
+	left: 50%;
+	margin-left: -15px;
+}
+.juego_balon {
+    height: 100% !important;
+    margin: 0 auto 0 -19px !important;
+    min-height: 100%;
+    padding-bottom: 8px;
+    padding-top: 5px;
+}
+.nombre_equipo{
+
+}
+
 /* Lineas Comentarios partidos*/
+
 .tl-content.panel.padder.b-a.w-md.w-auto-xs
 {
 	padding-top: 0px;
@@ -163,11 +185,10 @@
 
 }
 /*minuto listado equipos*/
-.nombre_equipos_minuto
-{
-
-    padding-right: 40px;
-
+.nombre_equipos_minuto {
+    left: -15px;
+    padding-right: 79px;
+    position: relative;
 }
 .nombre_equipos_minuto:last-child
 {

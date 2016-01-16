@@ -4,11 +4,11 @@
       <div class="wrapper bg b-b" ng-repeat="partido in partidos">
          
         <button ng-click="show_timeline({{partido.comentarios}})" class="btn btn-info btn-addon">          
-          <div class="col w-lg2">
+          <div class="col w-lg2 separador_partido">
             <i class="fa fa-soccer-ball-o juego_balon"   ng-hide=""></i>          
           </div>
           <div ng-repeat=" equipo in partido.equipos" class="col w-lg5 nombre_equipos_minuto ">               
-            <h5 class="m-n font-thin">{{equipo.nombre_equipo}}</h5><img class="logos_minuatura" src="http://localhost:8000/logos/{{equipo.path}}">
+            <h5 class="m-n font-thin nombre_equipo">{{equipo.nombre_equipo}}</h5><img class="logos_miniatura" src="http://localhost:8000/logos/{{equipo.path}}">
           </div> 
           
         </button>
