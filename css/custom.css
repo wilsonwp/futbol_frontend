@@ -19,6 +19,33 @@
 
 }
 
+
+/*header*/
+.header-logo
+{
+	background-color: #fff;
+}
+.nombre_app
+{
+	color:#bc000a ;
+}
+/*Footer app*/
+.app-footer{
+	position: fixed;
+	background-color: #000 !important;
+	color:#fff;
+}
+.foot-logo
+{
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+.copy {
+    font-size: 16px;
+    margin-top: -1px;
+    position: relative;
+    top: 8px;
+}
 /* Lineas Comentarios partidos*/
 
 .tl-content.panel.padder.b-a.w-md.w-auto-xs
