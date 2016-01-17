@@ -267,7 +267,7 @@
       formatYear: 'yyyy',
       startingDay: 1,
       class: 'datepicker',
-      regional:'sv'
+      regional:'ve'
     };
 
     $scope.initDate = new Date('2016-15-20');
