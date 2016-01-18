@@ -319,36 +319,8 @@ angular.module('app')
                   url: '/access',
                   template: '<div ui-view class="fade-in-right-big smooth"></div>'
               })
-              .state('access.signin', {
-                  url: '/signin',
-                  templateUrl: 'tpl/page_signin.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/controllers/signin.js'] );
-                      }]
-                  }
-              })
-              .state('access.signup', {
-                  url: '/signup',
-                  templateUrl: 'tpl/page_signup.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/controllers/signup.js'] );
-                      }]
-                  }
-              })
-              .state('access.forgotpwd', {
-                  url: '/forgotpwd',
-                  templateUrl: 'tpl/page_forgotpwd.html'
-              })
-              .state('access.404', {
-                  url: '/404',
-                  templateUrl: 'tpl/page_404.html'
-              })
-
-              // fullCalendar
+              
+               // fullCalendar
               .state('app.calendar', {
                   url: '/calendar',
                   templateUrl: 'tpl/app_calendar.html',
@@ -371,6 +343,43 @@ angular.module('app')
                       }]
                   }
               })
+           
+              .state('access.signin', {
+                  url: '/signin',
+                  templateUrl: 'tpl/page_signin.html',
+                  resolve: {
+                      deps: ['$ocLazyLoad','uiLoad',
+                        function( $ocLazyLoad ,uiLoad ){
+                            return uiLoad.load('js/controllers/signin.js').then(function(){
+                                return $ocLazyLoad.load('toaster');
+                            } 
+                                    );
+                      }]
+                  }
+              })
+              .state('access.signup', {
+                  url: '/signup',
+                  templateUrl: 'tpl/page_signup.html',
+                  resolve: {
+                       deps: ['$ocLazyLoad','uiLoad',
+                        function( $ocLazyLoad ,uiLoad ){
+                            return uiLoad.load('js/controllers/signup.js').then(function(){
+                                return $ocLazyLoad.load('toaster');
+                            } 
+                                    );
+                      }]
+                  }
+              })
+              .state('access.forgotpwd', {
+                  url: '/forgotpwd',
+                  templateUrl: 'tpl/page_forgotpwd.html'
+              })
+              .state('access.404', {
+                  url: '/404',
+                  templateUrl: 'tpl/page_404.html'
+              })
+
+             
 
               // mail
               .state('app.mail', {
